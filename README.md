@@ -6,10 +6,10 @@ containing public tools we ship for incident.io customers.
 ## How do I install these formulae?
 
 ```console
-brew install incident-io/taps/<formula>
+brew install incident-io/homebrew-tap/<formula>
 ```
 
-Or `brew tap incident-io/taps` and then `brew install <formula>`.
+Or `brew tap incident-io/homebrew-tap` and then `brew install <formula>`.
 
 ## Documentation
 
