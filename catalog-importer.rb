@@ -5,20 +5,20 @@
 class CatalogImporter < Formula
   desc "Official incident.io catalog importer, for syncing catalog entries."
   homepage "https://incident.io/"
-  version "0.19.0"
+  version "0.20.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/incident-io/catalog-importer/releases/download/v0.19.0/catalog-importer_0.19.0_darwin_arm64.tar.gz"
-      sha256 "93015ed2235b406560009e7d1cec7da44e779c4f122b691df2dc1e9ed72e6bc6"
+    if Hardware::CPU.intel?
+      url "https://github.com/incident-io/catalog-importer/releases/download/v0.20.0/catalog-importer_0.20.0_darwin_amd64.tar.gz"
+      sha256 "5d30968cb7aec1ebb3127e30d3a3759cf1607a074f18f2d40aff71b7139f22e8"
 
       def install
         bin.install "catalog-importer"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/incident-io/catalog-importer/releases/download/v0.19.0/catalog-importer_0.19.0_darwin_amd64.tar.gz"
-      sha256 "c55e2f700ed2d895f37b72c19737391d377c6081927566243dbc1ebf0a8a4914"
+    if Hardware::CPU.arm?
+      url "https://github.com/incident-io/catalog-importer/releases/download/v0.20.0/catalog-importer_0.20.0_darwin_arm64.tar.gz"
+      sha256 "508591912da369fb771a35fc51bf8dd1375991831c4b92a43696dee543be3a57"
 
       def install
         bin.install "catalog-importer"
@@ -28,16 +28,16 @@ class CatalogImporter < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/incident-io/catalog-importer/releases/download/v0.19.0/catalog-importer_0.19.0_linux_arm64.tar.gz"
-      sha256 "f856f9762cfff162632784f9e390f4efa74eadce29c49357fde2fa4d358ffecf"
+      url "https://github.com/incident-io/catalog-importer/releases/download/v0.20.0/catalog-importer_0.20.0_linux_arm64.tar.gz"
+      sha256 "340fff4f57ae2fe0fa76b6b553018028dd405c8e7a84415f68fe6afae3871371"
 
       def install
         bin.install "catalog-importer"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/incident-io/catalog-importer/releases/download/v0.19.0/catalog-importer_0.19.0_linux_amd64.tar.gz"
-      sha256 "2d51747cd4f3a280e691dcf070a5db50f35a313754cd652c5dad672c1a9070a3"
+      url "https://github.com/incident-io/catalog-importer/releases/download/v0.20.0/catalog-importer_0.20.0_linux_amd64.tar.gz"
+      sha256 "1c56c0d8bf1ac0d5c9e84a28b1156dc66644fadf8ed2d645fff96c51ef973470"
 
       def install
         bin.install "catalog-importer"
