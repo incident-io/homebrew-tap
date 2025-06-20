@@ -5,20 +5,20 @@
 class TapIncident < Formula
   desc "Official incident.io Singer tap, for extracting data into Singer targets."
   homepage "https://incident.io/"
-  version "0.4.1"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/incident-io/singer-tap/releases/download/v0.4.1/tap-incident_0.4.1_darwin_amd64.tar.gz"
-      sha256 "ab8d184a14d399198d25ba76e97ef89ad7d88157b8c67a20f847c45f5785c0a3"
+      url "https://github.com/incident-io/singer-tap/releases/download/v0.6.0/tap-incident_0.6.0_darwin_amd64.tar.gz"
+      sha256 "21ff8f12c9286e749363e607a08238f222ea7c9c64ba71d89495609766cb4d86"
 
       def install
         bin.install "tap-incident"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/incident-io/singer-tap/releases/download/v0.4.1/tap-incident_0.4.1_darwin_arm64.tar.gz"
-      sha256 "bcf0e49434dfc39561d1d81da43424fca9fc6509b611d009b99a176557d77525"
+      url "https://github.com/incident-io/singer-tap/releases/download/v0.6.0/tap-incident_0.6.0_darwin_arm64.tar.gz"
+      sha256 "7a4c61190c60598767aca7b2d45df82fd7386f1f5834c039ee40ffb8f4f172b7"
 
       def install
         bin.install "tap-incident"
@@ -28,16 +28,16 @@ class TapIncident < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/incident-io/singer-tap/releases/download/v0.4.1/tap-incident_0.4.1_linux_arm64.tar.gz"
-      sha256 "b9764472ce194b2abac4ec3fb61b886e452e437b76bd598fc764a1e3c827261d"
+      url "https://github.com/incident-io/singer-tap/releases/download/v0.6.0/tap-incident_0.6.0_linux_arm64.tar.gz"
+      sha256 "d5ff1c4eddb6ca8c8722dab3bdfc850e3f2fdc1a9e21587375d165cb293014f7"
 
       def install
         bin.install "tap-incident"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/incident-io/singer-tap/releases/download/v0.4.1/tap-incident_0.4.1_linux_amd64.tar.gz"
-      sha256 "b83c6dc416fead6a0c46004af208a9ca3b1a4cec7f7b10eb90053471d04b76e4"
+      url "https://github.com/incident-io/singer-tap/releases/download/v0.6.0/tap-incident_0.6.0_linux_amd64.tar.gz"
+      sha256 "c03d8e29f118684d79c050a7a68b13277c473467f212fc250eca84521351c06a"
 
       def install
         bin.install "tap-incident"
