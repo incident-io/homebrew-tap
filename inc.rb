@@ -5,13 +5,13 @@
 class Inc < Formula
   desc "CLI for incident.io"
   homepage "https://incident.io/"
-  version "0.6.7"
+  version "0.6.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/incident-io/inc/releases/download/v0.6.7/inc_0.6.7_darwin_amd64.tar.gz"
-      sha256 "97cf4b7c09d4d7f281b02c1da879bdab3632eb6d3bd728c2be9e4576b0d46287"
+      url "https://github.com/incident-io/inc/releases/download/v0.6.8/inc_0.6.8_darwin_amd64.tar.gz"
+      sha256 "c2fbb5b551ce13aedfa1b19b2c7b3c5fbc00f2664c691ce0435309c72adfeab0"
 
       def install
         bin.install "inc"
@@ -21,8 +21,8 @@ class Inc < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/incident-io/inc/releases/download/v0.6.7/inc_0.6.7_darwin_arm64.tar.gz"
-      sha256 "536aea4bde1368002a07a32b1f56da77571442623bca50a7e8734a2a880a2ff5"
+      url "https://github.com/incident-io/inc/releases/download/v0.6.8/inc_0.6.8_darwin_arm64.tar.gz"
+      sha256 "40d3ef584fdeeaeb8488b316e3a42d8d7866ff229b0b8b5a1acfc5c17025257e"
 
       def install
         bin.install "inc"
@@ -35,8 +35,8 @@ class Inc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/incident-io/inc/releases/download/v0.6.7/inc_0.6.7_linux_amd64.tar.gz"
-      sha256 "5b2db4be33ec00f7a9b5ceb44b3c691e79e3acbc0fbbb782e4f5eb74d7a73926"
+      url "https://github.com/incident-io/inc/releases/download/v0.6.8/inc_0.6.8_linux_amd64.tar.gz"
+      sha256 "470085f24c64d88ec108a2c5eaeedabadfff37aa1b703beffc64fc9984ca8639"
       def install
         bin.install "inc"
         bash_completion.install "completions/inc.bash" => "inc"
@@ -45,8 +45,8 @@ class Inc < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/incident-io/inc/releases/download/v0.6.7/inc_0.6.7_linux_arm64.tar.gz"
-      sha256 "dc63297077ed738d7e18da257c911908a97b19af9e7eed45ed60ea6703cfc0cf"
+      url "https://github.com/incident-io/inc/releases/download/v0.6.8/inc_0.6.8_linux_arm64.tar.gz"
+      sha256 "2906db99bc4a0a68e0e09b72c17c81ef3b7934ed00ad80a1deb469ddfacdad40"
       def install
         bin.install "inc"
         bash_completion.install "completions/inc.bash" => "inc"
